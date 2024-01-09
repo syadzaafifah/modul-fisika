@@ -1,0 +1,76 @@
+*
+{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #fbfbfb;
+}
+@media (min-width: 991.98px) {
+  main {
+    padding-left: 240px;
+  }
+}
+
+.list-group-item
+{
+  background-color: transparent;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 58px 0 0; /* Height of navbar */
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+  width: 240px;
+  z-index: 600;
+  border: solid 6px #9BBEC8;
+  background-color: #9BBEC8 !important;
+}
+
+@media (max-width: 991.98px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+.sidebar .active {
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: 0.5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+.card {
+  border: solid 6px #DDF2FD;
+  background-color: #DDF2FD;
+}
+
+#main-navbar{
+  border: solid 6px #427D9D;
+  background-color: #427D9D !important;
+}
+
+.backgroundContainer{
+  min-height: 80vh;
+  background-image: url('../img/Cover2.png');
+  background-size: cover;
+
+}
+
+@media (max-width: 991.98px) {
+  .backgroundContainer {
+    background-image: url('../img/coverhp.png');
+    background-size: cover;
+  }
+}
